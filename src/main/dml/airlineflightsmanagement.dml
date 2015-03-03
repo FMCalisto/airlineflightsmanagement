@@ -2,13 +2,13 @@ package pt.tecnico.airlineflightsmanagement.domain;
 
 class AirlineFlightsManagement;
 
-class Person {
+class Airport {
   String name;
 }
 
-class Contact {
+class Number {
   String name;
-  Integer phoneNumber;
+  Integer intNumber;
 }
 
 relation DomainRootHasAirlineFlightsManagementApplication {
@@ -20,16 +20,16 @@ relation DomainRootHasAirlineFlightsManagementApplication {
   }
 }
 
-relation PersonContainsContacts {
-  Person playsRole person;
-  Contact playsRole contact {
+relation AirportContainsNumber {
+  Airport playsRole airport;
+  Number playsRole n {
     multiplicity *;
   }
 }
 
-relation AirlineFlightsManagementContainsPersons {
-  AirlineFlightsManagement playsRole phoneBook;
-  Person playsRole person {
+relation AirlineFlightsManagementContainsAirport {
+  AirlineFlightsManagement playsRole airlineFlightManagement;
+  Airport playsRole airport {
     multiplicity *;
   }
 }

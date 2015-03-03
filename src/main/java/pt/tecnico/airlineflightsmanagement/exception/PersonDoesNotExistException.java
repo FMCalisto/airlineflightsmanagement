@@ -1,18 +1,18 @@
 package pt.tecnico.airlineflightsmanagement.exception;
 
-public class PersonDoesNotExistException extends AirlineFlightsManagementException {
+public class AirportDoesNotExistException extends AirlineFlightsManagementException {
 
 	/**
 	 */
 	private static final long serialVersionUID = 1L;
 
-	private String personName;
+	private String AirportNumber;
 
-	public PersonDoesNotExistException(String personName) {
-		this.personName = personName;
+	public AirportDoesNotExistException(String AirportNumber) {
+		this.AirportNumber = AirportNumber;
 	}
 	
-	public String getPersonName() {
-		return this.personName;
+	public String getAirportNumber() {
+		return this.AirportNumber;
 	}
 }
