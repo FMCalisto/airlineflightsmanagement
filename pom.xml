@@ -3,11 +3,11 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>pt.tecnico</groupId>
-    <artifactId>phonebook</artifactId>
+    <artifactId>airlineflightsmanagement</artifactId>
     <version>1.0.0-SNAPSHOT</version>
     <packaging>jar</packaging>
 
-    <name>Phonebook</name>
+    <name>Management of an Airline Flights Company</name>
 
     <properties>
 	<java.version>1.8</java.version>
@@ -76,7 +76,7 @@
               </execution>
             </executions>
             <configuration>
-    	      <mainClass>pt.tecnico.phonebook.PhoneBookApplication</mainClass>
+    	      <mainClass>pt.tecnico.airlineflightsmanagement.AirlineFlightsManagementApplication</mainClass>
               <killAfter>-1</killAfter>
                 </configuration>
           </plugin>

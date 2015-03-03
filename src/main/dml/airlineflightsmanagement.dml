@@ -1,0 +1,35 @@
+package pt.tecnico.airlineflightsmanagement.domain;
+
+class AirlineFlightsManagement;
+
+class Person {
+  String name;
+}
+
+class Contact {
+  String name;
+  Integer phoneNumber;
+}
+
+relation DomainRootHasAirlineFlightsManagementApplication {
+  .pt.ist.fenixframework.DomainRoot playsRole root {
+    multiplicity 0..1;
+  }
+  AirlineFlightsManagement playsRole airlineflightsmanagement {
+    multiplicity 0..1;
+  }
+}
+
+relation PersonContainsContacts {
+  Person playsRole person;
+  Contact playsRole contact {
+    multiplicity *;
+  }
+}
+
+relation AirlineFlightsManagementContainsPersons {
+  AirlineFlightsManagement playsRole phoneBook;
+  Person playsRole person {
+    multiplicity *;
+  }
+}
