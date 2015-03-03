@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite tests="1" failures="0" name="pt.tecnico.phonebook.AppTest" time="0.002" errors="0" skipped="0">
+  <properties>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="sun.boot.library.path" value="P:\Windows\Programs\Tools\Java\jdk1.8.0_31\bin"/>
+    <property name="java.vm.version" value="25.31-b07"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="path.separator" value=";"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="user.script" value=""/>
+    <property name="user.country" value="US"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="P:\Windows\Programs\Develop\eclipse\workspace\phonebook"/>
+    <property name="java.runtime.version" value="1.8.0_31-b13"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
+    <property name="java.endorsed.dirs" value="P:\Windows\Programs\Tools\Java\jdk1.8.0_31\lib\endorsed"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.io.tmpdir" value="C:\Users\FRANCI~1\AppData\Local\Temp\"/>
+    <property name="line.separator" value="
+"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.variant" value=""/>
+    <property name="os.name" value="Windows 8.1"/>
+    <property name="classworlds.conf" value="P:\Windows\Programs\Develop\eclipse\workspace\.metadata\.plugins\org.eclipse.m2e.launching\launches\m2conf8526421539670391946.tmp"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.library.path" value="P:\Windows\Programs\Tools\Java\jdk1.8.0_31\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;P:/Windows/Programs/Tools/Java/jdk1.8.0_31/bin/server;P:/Windows/Programs/Tools/Java/jdk1.8.0_31/bin;P:/Windows/Programs/Tools/Java/jdk1.8.0_31/lib/amd64;P:\Windows\Programs\Tools\Java\jdk1.8.0_31\bin;P:\Windows\Programs\Tools\Java\jre1.8.0_31\bin;P:\Windows\Programs\Tools\Apache Software Foundation\apache-maven-3.2.5\bin;P:\Windows\Programs\Develop\eclipse\bin;P:\Windows\Programs\Develop\MySQL\mysql-5.6.23-winx64\bin;P:\Windows\Programs\Tools\Java\jdk1.8.0_31\bin;P:\Windows\Programs\Tools\Apache Software Foundation\apache-maven-3.2.5\bin;C:\Windows\System32;P:\Windows\Programs\Develop\eclipse;;."/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.class.version" value="52.0"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="os.version" value="6.3"/>
+    <property name="user.home" value="C:\Users\FranciscoMaria"/>
+    <property name="user.timezone" value="Europe/London"/>
+    <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
+    <property name="java.specification.version" value="1.8"/>
+    <property name="file.encoding" value="Cp1252"/>
+    <property name="user.name" value="FranciscoMaria"/>
+    <property name="java.class.path" value="/P:/Windows/Programs/Develop/eclipse/plugins/org.eclipse.m2e.maven.runtime_1.5.0.20140605-2032/jars/plexus-classworlds-2.5.1.jar"/>
+    <property name="org.slf4j.simpleLogger.defaultLogLevel" value="info"/>
+    <property name="java.vm.specification.version" value="1.8"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.home" value="P:\Windows\Programs\Tools\Java\jdk1.8.0_31"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher -B test exec:java"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.language" value="en"/>
+    <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.version" value="1.8.0_31"/>
+    <property name="java.ext.dirs" value="P:\Windows\Programs\Tools\Java\jdk1.8.0_31\lib\ext;C:\WINDOWS\Sun\Java\lib\ext"/>
+    <property name="sun.boot.class.path" value="P:\Windows\Programs\Tools\Java\jdk1.8.0_31\lib\resources.jar;P:\Windows\Programs\Tools\Java\jdk1.8.0_31\lib\rt.jar;P:\Windows\Programs\Tools\Java\jdk1.8.0_31\lib\sunrsasign.jar;P:\Windows\Programs\Tools\Java\jdk1.8.0_31\lib\jsse.jar;P:\Windows\Programs\Tools\Java\jdk1.8.0_31\lib\jce.jar;P:\Windows\Programs\Tools\Java\jdk1.8.0_31\lib\charsets.jar;P:\Windows\Programs\Tools\Java\jdk1.8.0_31\lib\jfr.jar;P:\Windows\Programs\Tools\Java\jdk1.8.0_31\classes"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="maven.home" value="P:\Windows\Programs\Develop\eclipse\workspace\phonebook\EMBEDDED"/>
+    <property name="file.separator" value="\"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="sun.desktop" value="windows"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+  </properties>
+  <testcase classname="pt.tecnico.phonebook.AppTest" name="testApp" time="0.002"/>
+</testsuite>
