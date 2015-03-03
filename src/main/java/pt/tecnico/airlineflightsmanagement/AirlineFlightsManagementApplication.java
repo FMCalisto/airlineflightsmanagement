@@ -19,7 +19,7 @@ import javax.transaction.*;
 public class AirlineFlightsManagementApplication {
 
     public static void main(String[] args) {
-   	System.out.println("Welcome to the AirlineFlightsManagement application!");
+   	System.out.println("Welcome to the Airline Flights Management application!");
 
 	TransactionManager tm = FenixFramework.getTransactionManager();
     	boolean committed = false;
@@ -30,10 +30,10 @@ public class AirlineFlightsManagementApplication {
 	    AirlineFlightsManagement pb = AirlineFlightsManagement.getInstance();
 	    populateDomain(pb);
 
-	    for (Person person : pb.getPersonSet()) {
-		System.out.println("The Contact book of " + person.getName() + " :");
-		for(Contact contact : person.getContactSet()) {
-		    System.out.println("\t Name: " + contact.getName() + " phone: " + contact.getPhoneNumber());
+	    for (Airport airport : pb.getAirportSet()) {
+		System.out.println("The Number information of " + airport.getNumber() + " :");
+		for(Number n : airport.getNumberSet()) {
+		    System.out.println("\t Airport: " + n.getAirport() + " phone: " + n.getAirportNumber());
 		}
 	    }
 	    tm.commit();
@@ -69,35 +69,29 @@ public class AirlineFlightsManagementApplication {
 
     @Atomic
     private static void recoverFromBackup(org.jdom2.Document jdomDoc) {
-	AirlineFlightsManagement pb = AirlineFlightsManagement.getInstance();
+	AirlineFlightsManagement ap = AirlineFlightsManagement.getInstance();
 
-	pb.importFromXML(jdomDoc.getRootElement());
+	ap.importFromXML(jdomDoc.getRootElement());
     }
 
-    static void populateDomain(AirlineFlightsManagement pb) {
-	if (!pb.getPersonSet().isEmpty())
+    static void populateDomain(AirlineFlightsManagement ap) {
+	if (!ap.getAirportSet().isEmpty())
 	    return;
 
 	// setup the initial state if airlineflightsmanagement is empty
 
-	Person person = new Person("Manel");
- 	pb.addPerson(person);
-	person.addContact(new Contact("SOS", 112));
-	Contact c = new Contact("IST", 214315112);
-	c.setPerson(person);
+	Airport airport = new Airport("Porto");
+ 	ap.addAirport(airport);
+	airport.addNumber(new Number("06:50", 1951));
+	Number n = new Number("21:55", 1988);
+	n.setAirport(airport);
 
-	person = new Person("Maria");
- 	pb.addPerson(person);
-	person.addContact(new Contact("SOS", 112));
-	c = new Contact("IST", 214315112);
-	c.setPerson(person);
-
-	person.addContact(new Contact("Manel", 333333333));
+	airport.addNumber(new Number("14:20", 0651));
     }
 	
     @Atomic
     public static org.jdom2.Document convertToXML() {
-	AirlineFlightsManagement pb = AirlineFlightsManagement.getInstance();
+	AirlineFlightsManagement ap = AirlineFlightsManagement.getInstance();
 	
 	org.jdom2.Document jdomDoc = new org.jdom2.Document();
 
@@ -115,11 +109,11 @@ public class AirlineFlightsManagementApplication {
 
     // removes the first person of the AirlineFlightsManagement application.
     @Atomic
-    static void removeAllPeople() {
-	AirlineFlightsManagement pb = AirlineFlightsManagement.getInstance();
+    static void removeAllAirport() {
+	AirlineFlightsManagement ap = AirlineFlightsManagement.getInstance();
 
-	for (Person p : pb.getPersonSet()) {
-	    p.delete();
+	for (Airport a : ap.getAirportSet()) {
+	    a.delete();
 	}
     }
 }
