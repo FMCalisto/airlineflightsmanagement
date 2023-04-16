@@ -19,7 +19,7 @@
         <fenix.framework.backend>jvstm-ojb</fenix.framework.backend>
         <version.pt.ist.fenix.framework>2.6.0</version.pt.ist.fenix.framework>
 
-        <version.junit>4.11</version.junit>
+        <version.junit>4.13.1</version.junit>
         <version.slf4j.api>1.7.7</version.slf4j.api>
         <version.ch.qos.logback.logback.classic>1.1.2</version.ch.qos.logback.logback.classic>
 
