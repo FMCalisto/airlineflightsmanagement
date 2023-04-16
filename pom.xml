@@ -21,7 +21,7 @@
 
         <version.junit>4.11</version.junit>
         <version.slf4j.api>1.7.7</version.slf4j.api>
-        <version.ch.qos.logback.logback.classic>1.1.2</version.ch.qos.logback.logback.classic>
+        <version.ch.qos.logback.logback.classic>1.2.0</version.ch.qos.logback.logback.classic>
 
 	<version.org.jdom.jdom>2.0.5</version.org.jdom.jdom>
     </properties>
